@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture House</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <video id="back-video" autoplay loop muted>
+        <source src="./Images/857150-hd_1920_746_30fps.mp4">
+    </video>
+    <div class="container">
+        <div class="arrow">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="navbar" id="top">
+            <div class="container">
+                <div class="logo">
+                    <div class="img">
+                        <img src="./Images//Brown Framed Interior Design Logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#rugs">rugs</a></li>
+                        <li><a href="#showroom">Showrooms</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa fa-user"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa fa-bars ico-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="mob-navbar">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <div class="img">
+                        <img src="./Images//Brown Framed Interior Design Logo.png" alt="logo">
+                    </div>
+                </div>
+                
+                <div class="login">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa fa-user"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa fa-bars ico-bars" id="toggle-menu"></i>
+                </div>
+            </div>
+            <div class="nav-menu" id="toggle-menu-container">
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#rugs">rugs</a></li>
+                    <li><a href="#showroom">Showrooms</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="banner" data-aos="fade-up" id="banner">
+        <div class="container">
+            <h1>Welcome to Furniture House</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img">
+                        <img src="./Images/furniture1.jpg" alt="background1">
+                        <div class="content">
+                            <h3> The Season of saving is here</h3>
+                            <p>STOCKTAKE SALE</p>
+                            <button type="button"><p> SHOP NOW</p></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img">
+                        <img src="./Images/furniture2.jpg" alt="background2">
+                        <div class="content">
+                            <p>STOCKTAKE SALE</p>
+                            <h3> the new showroom</h3>
+                            <button type="button"><p>take me there</p></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img">
+                        <img src="./Images/furniture3.jpg" alt="background3">
+                        <div class="content">
+                            <h3> The Season of saving is here</h3>
+                            <p>STOCKTAKE SALE</p>
+                            <button type="button"><p> SHOP NOW</p></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img">
+                        <img src="./Images/furniture4.jpg" alt="background4">
+                        <div class="content">
+                            <p>STOCKTAKE SALE</p>
+                            <h3> the new showroom</h3>
+                            <button type="button"><p>take me there</p></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="part1">
+                <h2>The Furniture Gallery</h2>
+                <p>decorate your lives with the beautiful and stylish trends delivering exclusively in India.</p>
+            </div>
+            <div class="part2">
+                <div class="card-layout">
+                    <div class="card">
+                        <img src="./Images/bed.jpg" alt="living">
+                        <div class="card-detail">
+                            <p>living room</p>
+                            <button type="button"><a href="./living.html" target="_blank">View Products</a></button>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <img src="./Images/card2.webp" alt="office">
+                        <div class="card-detail">
+                            <p>office room</p>
+                            <button type="button"><a href="./office.html" target="_blank">View Products</a></button>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <img src="./Images/dining.jpg" alt="dining">
+                        <div class="card-detail">
+                            <p>dining room</p>
+                            <button type="button"><a href="./dining.html" target="_blank">View Products</a></button>
+                        </div>  
+                    </div>
+                    
+            </div>
+        </div>
+    </section>
+    <section class="best-seller" data-aos="zoom-in" id="products">
+        <div class="container">
+            <div class="row">
+                <h2>Our Best Sellers</h2>
+            </div>
+            <div class="row">
+                <div class="cards">
+                    <div class="card-layout">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/card1.jpg" alt="chair">
+                            </div>
+                            <div class="content">
+                                <h4>Chair</h4>
+                                <p>Rs 3000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/card2.jfif" alt="sofa">
+                            </div>
+                            <div class="content">
+                                <h4>Sofa</h4>
+                                <p>Rs 18000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/armchair.jfif" alt="armchair">
+                            </div>
+                            <div class="content">
+                                <h4>Arm-Chair</h4>
+                                <p>Rs 4500</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/table.webp" alt="table">
+                            </div>
+                            <div class="content">
+                                <h4>Table</h4>
+                                <p>Rs 2800</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/computer-table.webp" alt="computer table">
+                            </div>
+                            <div class="content">
+                                <h4>Computer Table</h4>
+                                <p>Rs 12000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/almirah.jfif" alt="almirah">
+                            </div>
+                            <div class="content">
+                                <h4>Almirah</h4>
+                                <p>Rs 18000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/outdoor.jfif" alt="outdoor set">
+                            </div>
+                            <div class="content">
+                                <h4> Outdoor Set</h4>
+                                <p>Rs 20000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./Images/bed.jfif" alt="bed">
+                            </div>
+                            <div class="content">
+                                <h4>bed</h4>
+                                <p>Rs 32000</p>
+                            </div>
+                            <div class="card-details">
+                                <i class="fa-solid fa-cart-shopping"></i>                                
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rugs" data-aos="zoom-in" id="rugs">
+        <div class="container">
+            <h2>Beautiful Rugs</h2>
+            <p>The Best decorations to the flooring of your room</p>
+            <div class="cards">
+                <div class="card-layout">
+                    <div class="card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./Images/rugs1.jpg" alt="Avatar">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Floral Rugs</h1>
+                            <p>Small & beautiful</p>
+                            <p>Rs 5000 - Rs 8000</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/rugs2.webp" alt="rugs2">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Indian & Persian <br> Artistic Rugs</h1>
+                                <p>Rs 12000 - Rs 25000</p>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/rugs3.jpg" alt="rugs3">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Soft Shaggy & <br> Fluffy Rugs</h1>
+                                <p>Rs 18000 - Rs 30000</p>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/rugs4.webp" alt="circular rugs">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Circular Rugs</h1>
+                                <p>Rs 9000 - Rs 18000</p>
+                              </div>
+                            </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showroom" data-aos="zoom-in" id="showroom">
+        <div class="container">
+            <h2>Our Showrooms</h2>
+            <div class="place1">
+                <h5>KOLKATA</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+            <div class="place2">
+                <h5>HYDERABAD</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+            <div class="place3">
+                <h5>DELHI</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+            <div class="place4">
+                <h5>CHENNAI</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+            <div class="place5">
+                <h5>MUMBAI</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+            <div class="place6">
+                <h5>VIZAG</h5>
+                <a class="detail" href="./adress.html" target="_blank">address</a>
+            </div>
+        </div>
+    </section>
+    <section class="aboutus"id="about">
+        <div class="container">
+            <div class="row">
+                <div class="part1">
+                    <h3>About Us</h3>
+                    <p>At Furniture House, we craft the best quality products for people so that in everyday life furniture would not be the cause of delay.</p>
+                    <p>We try to provide the utmost comfort to our buyers. Whether you’re looking for a dining set to fit your family or a sofa to fit your unique style, our associates are here to help you. We know you need furniture suited to the way you live, so we will take the time to understand what you like and what you need.</p>
+                    <p>We can help you choose the right combination of fabrics and style for your custom sofa, or find the perfect finishing touch for a room. Our long history of helping people select new furniture is well established and will help you feel confident that you’ve made the right choice.</p>
+                    <button type="button">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="part1">
+                <div class="logo">
+                    <img src="./Images/Brown Framed Interior Design Logo.png" alt="logo">
+                </div>
+                <div class="address">
+                    <h3>Headoffice:-</h3>
+                    <p>7th Floor, Unit No- 7E, Bengal Eco Intelligent Park, Plot No. 3, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="part2">
+                <ul>
+                    <li>Gallery</li>
+                    <li>Products</li>
+                    <li>Rugs</li>
+                    <li>Showrooms</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+            <div class="part3">
+                <div class="contact">
+                    <p><i class="fa-regular fa-envelope"></i> - furniturehouse@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> - +91-1234567890</p>
+                </div>
+                <div class="form">
+                    <p>If you have any queries:--</p>
+                    <form action="">
+                        <input type="text" placeholder="Your message...">
+                    </form>
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="copyright">
+                    <p><i class="fa-regular fa-copyright"></i> 2024- Furniture House Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#toggle-menu").click(function(){
+                $("#toggle-menu").toggleClass("fa-xmark");
+                $("#toggle-menu-container").slideToggle("slow");
+            });
+        });
+    </script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      speed:3000,
+      loop:true,
+      effect: 'cube',
+      cubeEffect: {
+        shadow: false,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- AOS Script -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init({offset:50});
+  </script>
+</body>
+</html>

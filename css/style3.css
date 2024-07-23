@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NZ:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NZ:wght@100..400&family=Playwrite+PL:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(96, 247, 255);
+}
+.container{
+    max-width: 1170px !important;
+    width: 100%;
+    padding: 0px 15px;
+}
+header,
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading h2{
+    font-size: 40px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+.heading p{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+@media screen and (max-width:575px) {
+    .heading{
+        height: auto;
+    }
+    .heading .container{
+        padding: 10px 0px;
+    }
+    .heading h2{
+        font-size: 28px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+}
+/* End of heading */
+/* Start of address */
+.address{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.address .container{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.address .container .part1{
+    width: 40%;
+    height: 100%;
+}
+.address .container .part1 h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+.address .part1 h2{
+    padding-top: 20px;
+    font-size: 35px;
+}
+.address .part1 p{
+    font-size: 24px;
+    padding-top: 10px;
+}
+.address .part1 span{
+    font-weight: bold;
+    font-size: 28px;
+}
+.address .container .part2{
+    width: 50%;
+    height: 100%;
+}
+.address .container .part2 iframe{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:767px) {
+    .address .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .address .container .part1{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .address .container .part1 h1{
+        font-size: 35px;
+        width: 60%;
+    }
+    .address .part1 h2{
+        font-size: 30px;
+        padding: 0;
+    }
+    .address .part1 p{
+        font-size: 24px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .address .part1 span{
+        font-size: 22px;
+    }
+    .address .container .part2{
+        width: 78%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:575px) {
+    .address{
+        margin-top: 20px;
+    }
+    .address .container .part1 h1{
+        font-size: 24px;
+        width: 60%;
+    }
+    .address .part1 h2{
+        font-size: 24px;
+        padding: 0;
+    }
+    .address .part1 p{
+        font-size: 16px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .address .part1 span{
+        font-size: 18px;
+    }
+    .address .container .part2{
+        width: 60%;
+        height: 150px;
+    }
+}
+@media screen and (max-width:480px) {
+    .address{
+        margin-top: 20px;
+    }
+    .address .container .part1 h1{
+        font-size: 20px;
+        width: 60%;
+    }
+    .address .part1 h2{
+        font-size: 20px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:350px) {
+    .address{
+        margin-top: 10px;
+    }
+    .address .container .part1 h1{
+        font-size: 20px;
+        width: 60%;
+    }
+    .address .part1 h2{
+        font-size: 18px;
+        padding: 0;
+    }
+    .address .part1 p{
+        font-size: 14px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .address .part1 span{
+        font-size: 16px;
+    }
+    .address .container .part2{
+        width: 60%;
+        height: 120px;
+    }
+}
